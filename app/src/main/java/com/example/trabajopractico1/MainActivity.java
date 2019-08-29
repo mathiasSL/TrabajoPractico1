@@ -24,8 +24,8 @@ private MensajeRecibido mr;
     }
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
         mr=new MensajeRecibido();
         registerReceiver(mr, new IntentFilter("android.provider.Telephony.SMS_RECEIVED"));
 
